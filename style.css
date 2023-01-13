@@ -128,7 +128,7 @@ hr {
     }
 
     .palyers-and-blogs {
-        margin: 0 33px;
+        margin: 0;
     }
 
     .players {
@@ -145,4 +145,34 @@ hr {
     .section-title {
         text-align: center;
     }
+
+    /* blog section */
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+
+    .courses{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .course{
+        display: flex;
+        gap: 10px;
+    }
+    .course-info{
+        display: flex;
+        flex-direction: column;
+    }
+    .course-title{
+        white-space: nowrap;
+    }
+}
+
+.hide{
+    display: none;
+
 }
