@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #F3F1FF;
+    background-color: #6d5adb;
 }
 
 /* top players section */
@@ -16,13 +16,14 @@ body {
 .container {
     width: 870px;
     margin: auto;
-    background-color: white;
+
 
 
 }
 
 .palyers-and-blogs {
-    margin: 0 33px;
+    padding: 0 33px;
+    background-color: white;
 
 }
 
@@ -35,7 +36,7 @@ body {
     color: #562EFF;
     font-weight: 24px;
     font-weight: 500;
-    padding: 33px 0 40px 33px;
+    padding: 33px 0 40px 0;
 }
 
 .players {
@@ -47,34 +48,101 @@ body {
 
 .player {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 16px;
 }
 
 hr {
-    width: 807px;
+    width: 800px;
     margin: 0 auto;
+}
+
+/* blogs section */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 26px;
+    padding-bottom: 42px;
+    margin-bottom: 21px;
+}
+
+.blog {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+/* course section */
+.course-container {
+    padding: 0 33px;
+    background-color: white;
+}
+
+.courses{
+    display: flex;   
+    justify-content: space-between;
+    padding-bottom: 42px;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+    font-size: 12px;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+    font-size: 12px;
+    opacity: 0.50;
+}
+
+.rating-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.duration {
+    width: 94px;
+    height: 30px;
+    background-color: #FFE4E8;
+    border-radius: 14px;
+    color: #ED6B4F;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 /* responsive */
 @media screen and (max-width:576px) {
-    .container{
+    .container {
         width: 100%;
     }
-    .palyers-and-blogs{
+
+    .palyers-and-blogs {
         margin: 0 33px;
     }
+
     .players {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 29px;
 
     }
-    .player{
+
+    .player {
         justify-content: flex-start;
         flex-direction: column;
     }
-    .section-title{
+
+    .section-title {
         text-align: center;
     }
 }
